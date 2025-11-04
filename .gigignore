@@ -1,0 +1,29 @@
+# from project root
+cat > .gitignore <<EOF
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
+
+# OneDrive / sync temp
+desktop.ini
+
+EOF
+git add .gitignore
+git commit -m "Add .gitignore"
+git push
